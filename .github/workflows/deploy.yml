@@ -7,3 +7,10 @@ jobs:
     steps:
       - name: Hola mundo
         run: echo "Hola mundo"
+  second_jobs:
+  #needs para que se haga en secuencias
+    needs: first_jobs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola mundo
+        run: echo "Hola mundo"
