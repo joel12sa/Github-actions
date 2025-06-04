@@ -5,8 +5,12 @@ jobs:
   first_jobs:
     runs-on: ubuntu-latest
     steps:
-      - name: Hola mundo
-        run: echo "Hola mundo"
+    - name: Working dir
+      id: step_1
+      run: echo "my_variable=Hola Mundo" >> $GITHUB_OUTPUT
+
+    - name: Obtener mensaje
+      run: echo "${{ steps.step_1.outputs.my_variable }}"
   second_jobs:
   #needs para que se haga en secuencias
     needs: first_jobs
