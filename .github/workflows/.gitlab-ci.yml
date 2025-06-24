@@ -1,0 +1,7 @@
+stages:
+  - test
+
+prueba_echo:
+  stage: test
+  script:
+    - echo "Hola, mundo desde GitLab CI/CD"
