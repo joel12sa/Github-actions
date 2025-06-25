@@ -24,5 +24,5 @@ jobs:
       - name: creacion archivo ubuntu
         run: |
           echo pwd
-          echo "Archivo creado en Ubuntu" > ubuntu_file.txt
-          echo "Archivo creado en Ubuntu" > appp|ubuntu_file.txt
+          touch archivo.txt
+          echo ls -a
