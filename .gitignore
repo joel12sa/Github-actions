@@ -1,0 +1,40 @@
+# Bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno virtual
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# Configuración de entorno (seguridad)
+.env
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Cache de pytest
+.pytest_cache/
+.cache/
+
+# Archivos de VSCode
+.vscode/
+
+# Archivos de configuración de sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos de pruebas
+coverage/
+htmlcov/
+
+# Base de datos SQLite (si se genera)
+*.sqlite3
+
+# Carpeta de dependencias (opcional si no usas requirements.txt)
+pip-wheel-metadata/
