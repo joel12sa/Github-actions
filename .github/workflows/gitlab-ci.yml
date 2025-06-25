@@ -15,14 +15,14 @@ jobs:
         with:
           python-version: 3.11
 
-      - name: Instalar dependencias
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+      #- name: Instalar dependencias
+       # run: |
+        #  python -m pip install --upgrade pip
+         # pip install -r requirements.txt
       #configuracion de de la carpeta appp dentro de la mauina ubuntu 
-      
+    
       - name: creacion archivo ubuntu
         run: |
           echo pwd
           touch archivo.txt
-          echo ls -a
+          ls -a
